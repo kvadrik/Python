@@ -509,6 +509,7 @@ def vol_torus(torus_radius: float, tube_radius: float) -> float:
         raise ValueError("vol_torus() only accepts non-negative values")
     return 2 * pow(pi, 2) * torus_radius * pow(tube_radius, 2)
 
+
 def vol_octahedron(oct_side: float) -> float:
     """
     | Calculate the Volume of an Octahedron.
@@ -533,6 +534,7 @@ def vol_octahedron(oct_side: float) -> float:
     if oct_side < 0:
         raise ValueError("vol_octahedron() only accepts non-negative values")
     return oct_side**3 * 2**0.5 / 3
+
 
 def vol_icosahedron(tri_side: float) -> float:
     """
@@ -584,7 +586,7 @@ def main():
     print(
         f"Hollow Circular Cylinder: {vol_hollow_circular_cylinder(1, 2, 3) = }"
     )  # ~= 28.3
-    print(f"Octahedron: {vol_octahedron(2.5) = }") # ~=7.37
+    print(f"Octahedron: {vol_octahedron(2.5) = }")  # ~=7.37
     print(f"Icosahedron: {vol_icosahedron(2.5) = }")  # ~=34.09
 
 
