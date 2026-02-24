@@ -134,6 +134,7 @@ def surface_area_cone(radius: float, height: float) -> float:
         raise ValueError("surface_area_cone() only accepts non-negative values")
     return pi * radius * (radius + (height**2 + radius**2) ** 0.5)
 
+
 def lateral_surface_cone(radius: float, height: float) -> float:
     """
     Calculate the Lateral Surface Area of a Cone.
@@ -157,8 +158,9 @@ def lateral_surface_cone(radius: float, height: float) -> float:
     """
     if radius < 0 or height < 0:
         raise ValueError("lateral_surface_cone() only accepts non-negative values")
-    return pi * radius * (height**2 + radius**2) ** 0.5  
-    
+    return pi * radius * (height**2 + radius**2) ** 0.5
+
+
 def surface_area_conical_frustum(
     radius_1: float, radius_2: float, height: float
 ) -> float:
@@ -225,12 +227,13 @@ def surface_area_cylinder(radius: float, height: float) -> float:
         raise ValueError("surface_area_cylinder() only accepts non-negative values")
     return 2 * pi * radius * (height + radius)
 
+
 def lateral_surface_cylinder(radius: float, height: float) -> float:
     """
     Calculate the Lateral Surface Area of a Cylinder.
     Wikipedia reference: https://en.wikipedia.org/wiki/Cylinder
     Formula: 2 * pi * r * h
-        
+
     >>> lateral_surface_cylinder(10, 20)
     702.4814731040726
     >>> lateral_surface_cylinder(6, 8)
@@ -248,7 +251,8 @@ def lateral_surface_cylinder(radius: float, height: float) -> float:
     """
     if radius < 0 or height < 0:
         raise ValueError("lateral_surface_cylinder() only accepts non-negative values")
-    return 2 * pi * radius * height    
+    return 2 * pi * radius * height
+
 
 def surface_area_torus(torus_radius: float, tube_radius: float) -> float:
     """Calculate the Area of a Torus.
@@ -632,4 +636,3 @@ if __name__ == "__main__":
     print(f"Equilateral Triangle: {area_reg_polygon(3, 10) = }")
     print(f"Square: {area_reg_polygon(4, 10) = }")
     print(f"Reqular Pentagon: {area_reg_polygon(5, 10) = }")
-
