@@ -235,7 +235,7 @@ def lateral_surface_cylinder(radius: float, height: float) -> float:
     Formula: 2 * pi * r * h
 
     >>> lateral_surface_cylinder(10, 20)
-    702.4814731040726
+    1256.6370614359173
     >>> lateral_surface_cylinder(6, 8)
     301.59289474462014
     >>> lateral_surface_cylinder(0, 0)
@@ -636,3 +636,4 @@ if __name__ == "__main__":
     print(f"Equilateral Triangle: {area_reg_polygon(3, 10) = }")
     print(f"Square: {area_reg_polygon(4, 10) = }")
     print(f"Reqular Pentagon: {area_reg_polygon(5, 10) = }")
+
