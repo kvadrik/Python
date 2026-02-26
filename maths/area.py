@@ -620,8 +620,8 @@ def surface_area_reg_prism(sides: int, edge: float, height: float) -> float:
     >>> surface_area_reg_prism(2, 10, 15)
     Traceback (most recent call last):
         ...
-    ValueError: surface_area_reg_prism() only accepts integers greater than or equal to \
-three as number of sides
+    ValueError: surface_area_reg_prism() only accepts integers greater than or equal \
+to three as number of sides
     >>> surface_area_reg_prism(5, -2, 3)
     Traceback (most recent call last):
         ...
@@ -635,8 +635,8 @@ length of an edge or height
     >>> surface_area_reg_prism(2, -10, 15)
     Traceback (most recent call last):
         ...
-    ValueError: surface_area_reg_prism() only accepts integers greater than or equal to \
-three as number of sides
+    ValueError: surface_area_reg_prism() only accepts integers greater than or equal \
+to three as number of sides
     """
     if not isinstance(sides, int) or sides < 3:
         raise ValueError(
@@ -681,3 +681,4 @@ if __name__ == "__main__":
     print(f"Square: {area_reg_polygon(4, 10) = }")
     print(f"Reqular Pentagon: {area_reg_polygon(5, 10) = }")
     print(f"Regular Pentagonal Prism: {surface_area_reg_prism(5, 10, 15) = }")
+
