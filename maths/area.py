@@ -681,4 +681,3 @@ if __name__ == "__main__":
     print(f"Square: {area_reg_polygon(4, 10) = }")
     print(f"Reqular Pentagon: {area_reg_polygon(5, 10) = }")
     print(f"Regular Pentagonal Prism: {surface_area_reg_prism(5, 10, 15) = }")
-
